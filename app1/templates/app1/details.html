@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>{{album.album_title}}</h1>
+{% extends 'app1/base.html'%}
+{% block title %} Details {% endblock %}
+
+{% block body %}
+
+<h1>{{album.album_title}}</h1>
     <h3>{{album.artist}}</h3>
     <p>here, $ means it is favorite</p>
 
@@ -28,5 +26,4 @@
         <button type="submit">AddFavorite</button>
     </form>
 
-</body>
-</html>
+{% endblock %}

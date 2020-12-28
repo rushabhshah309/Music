@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Albums(models.Model):
@@ -8,7 +9,7 @@ class Albums(models.Model):
     genre = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.artist+" "+self.album_title+" "+self.genre
+        return self.artist + " " + self.album_title + " " + self.genre
 
 
 class Song(models.Model):
