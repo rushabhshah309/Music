@@ -2,14 +2,14 @@
 {% block body %}
 
 {% if allAlbums %}
-<h3>here are all albums:</h3>
-<ul>
-    {% for album in allAlbums %}
-    <li><a href="{% url 'details' album.id %}">{{album.album_title}}</a></li>
-    {% endfor %}
-</ul>
+    <h3>here are all albums:</h3>
+    <ul>
+        {% for album in allAlbums %}
+        <li><a href="{% url 'details' album.id %}">{{album.album_title}}</a></li>
+        {% endfor %}
+    </ul>
 {% else %}
-<h3>no albums..</h3>
+    <h3>no albums..</h3>
 {% endif %}
 
 {% endblock %}

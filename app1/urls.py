@@ -2,7 +2,6 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('<int:id>/', views.details, name='details'),
-    path('<int:id>/favorite', views.favorite, name='favorite')
+    path('', views.IndexView.as_view(), name='index'),
+    path('<int:pk>/', views.DetailView.as_view(), name='details'),
 ]
