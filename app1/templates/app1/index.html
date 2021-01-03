@@ -2,7 +2,7 @@
 {% block body %}
 
 {% if allAlbums %}
-    <h3>here are all albums:</h3>
+    <h2>here are all albums:</h2>
     <ul>
         {% for album in allAlbums %}
         <li><a href="{% url 'details' album.id %}">{{album.album_title}}</a></li>
